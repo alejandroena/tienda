@@ -66,14 +66,14 @@ class Cesta {
         if($this->vacia()){
             $cadena = "Cesta vacia";
         }else{
-            $cadena = "<div id=listado><table>";
+            $cadena = "<div id=listado><table border=1>";
             foreach ($this->productos as $producto){
                 $cadena.="<tr><td width=280><span class=nombre>"
                 .$producto->getNombre_corto()."</span><button type=button onclick=borrar('"
                 .$producto->getCodigo()."') style='width:20px; height:25px' >X</button></td>"
                 . "<td>".$this->cantidad[$producto->getCodigo()]."</td></tr>";
             }
-            $cadena.="</table></div><br /><span class=precio>Total: ".$this->get_coste()."€</span>";
+            $cadena.="</table><br /></div><span class=precio>Total: ".$this->get_coste()."€</span>";
         }
         return $cadena;
     }
