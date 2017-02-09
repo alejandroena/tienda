@@ -34,24 +34,6 @@ if(!is_null($_SESSION['cesta']) && !is_null($_SESSION['cantidad'])){
     $c->carga_cesta();
 }
 
-/*
-if(isset($_POST['añadir'])){
-    $codigo = filter_input(INPUT_POST, "codigo");
-    $c->nuevo_articulo($codigo);
-    $c->guarda_cesta();
-}
-
-if(isset($_POST['borrar'])){
-    $cod = filter_input(INPUT_POST, "cod");
-    $c->borrar_articulo($cod);
-    $c->guarda_cesta();
-}
-if(isset($_POST['vaciar'])){
-    $_SESSION['cesta'] = null;
-    $_SESSION['cantidad'] = null;
-}
-*/
-
 $ajax = new xajax();
 $ajax->configure('javascript URI', './../libs/');
 $ajax->register(XAJAX_FUNCTION,"add");

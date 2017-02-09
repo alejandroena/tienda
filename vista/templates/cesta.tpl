@@ -14,20 +14,20 @@
             <tr>
                 <td width="280">
                     <span class="nombre">{$producto->getNombre_corto()}</span>
-                    <button type="button" style="background-image: url('./../vista/css/imagenes/borrar.png');" onclick="borrar('$producto->getCodigo()')"></button>
+                    <button type="button" style="width:20px; height:25px" onclick="borrar('$producto->getCodigo()')">X</button>
                 </td>
                 <td>{$cantidad[$producto->getCodigo()]}</td>
             </tr>
         {/foreach}
         </table>
-        {/if}
         <br />
         </div>
         <span class="precio">Total: {$coste}€</span>
-        </div>
         <div id="botonesCesta">
         <button type="button" onclick="vaciar()" >Vaciar</button>
         <button type="button" onclick="window.location.href='./pagar.php'" >Pagar</button>
         </div>
+        {/if}        
+        </div>   
     </div>
 </div>

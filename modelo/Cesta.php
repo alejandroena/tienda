@@ -73,7 +73,9 @@ class Cesta {
                 .$producto->getCodigo()."') style='width:20px; height:25px' >X</button></td>"
                 . "<td>".$this->cantidad[$producto->getCodigo()]."</td></tr>";
             }
-            $cadena.="</table><br /></div><span class=precio>Total: ".$this->get_coste()."€</span>";
+            $cadena.="</table><br /></div><span class=precio>Total: ".$this->get_coste()."€</span>"
+                ."<div id=botonesCesta><button type=button onclick='vaciar()' >Vaciar</button>"
+                ."<button type=button onclick=window.location.href='./pagar.php' >Pagar</button></div>";
         }
         return $cadena;
     }

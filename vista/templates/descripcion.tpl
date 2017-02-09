@@ -6,10 +6,10 @@
     <body>
         <div id="contenedor">
             <div id="encabezado">
-                <h1>{$producto->getNombre_corto()}</h1>
-                Codigo: {$producto->getCodigo()}
+                <h1>{$producto->getNombre_corto()}</h1><br />
+                
             </div>
-
+                <h2>Codigo: {$producto->getCodigo()}</h2>
             <h3>Caracteristicas</h3>
             <p>Procesador: {$ordenador->getProcesador()}</p>
             <p>RAM: {$ordenador->getRAM()}</p>

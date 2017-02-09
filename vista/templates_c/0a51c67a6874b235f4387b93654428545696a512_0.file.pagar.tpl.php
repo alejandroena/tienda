@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-02-07 11:53:34
+/* Smarty version 3.1.30, created on 2017-02-09 12:05:36
   from "/var/www/tienda/vista/templates/pagar.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5899a72e9b2133_96832416',
+  'unifunc' => 'content_589c4d007642a9_56675727',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0a51c67a6874b235f4387b93654428545696a512' => 
     array (
       0 => '/var/www/tienda/vista/templates/pagar.tpl',
-      1 => 1486464804,
+      1 => 1486638307,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5899a72e9b2133_96832416 (Smarty_Internal_Template $_smarty_tpl) {
+function content_589c4d007642a9_56675727 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <head>
@@ -85,9 +85,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
                 <input name="rm" type="hidden" value="2" />
                 <input type="image" src="http://www.paypal.com/es_ES/i/btn/x-click-but01.gif" border="0" name="submit" alt="Realice pagos con PayPal: es rápido, gratis y seguro">
                 </form>
-                <form action="./../modelo/generarPDF.php" method="post" target="_blank" >
-                    <input type="submit" name="imprimir" value="Imprimir Factura" />
-                </form>
+                <button type="button" onclick="window.location.href='./../modelo/generarPDF.php'" >Imprimir factura</button>
+                <button type="button" onclick="window.location.href='./productos.php'" >Seguir comprando</button>
             </div>
         </div>
     </body>

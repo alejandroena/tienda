@@ -38,9 +38,8 @@
                 <input name="rm" type="hidden" value="2" />
                 <input type="image" src="http://www.paypal.com/es_ES/i/btn/x-click-but01.gif" border="0" name="submit" alt="Realice pagos con PayPal: es rápido, gratis y seguro">
                 </form>
-                <form action="./../modelo/generarPDF.php" method="post" target="_blank" >
-                    <input type="submit" name="imprimir" value="Imprimir Factura" />
-                </form>
+                <button type="button" onclick="window.location.href='./../modelo/generarPDF.php'" >Imprimir factura</button>
+                <button type="button" onclick="window.location.href='./productos.php'" >Seguir comprando</button>
             </div>
         </div>
     </body>

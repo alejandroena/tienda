@@ -94,7 +94,7 @@
 } 
 
 #encabezado h1 {
-  margin: 0; 
+  margin: 10px; 
   padding: 10px 0; 
 }
 .pagproductos #cesta {
@@ -121,20 +121,24 @@
   height:30px;
   padding-left:0px;
 }
-
+.pagproductos{
+    overflow:hidden;
+}
 .pagproductos #productos {
-  margin: 0 10em 0 10px;
+  margin: 0 30px 0 10px;
+  height: 89%;
+  overflow-y: scroll;
 } 
 
 #cesta{
-    height: 87%;
+    height: 89%;
 }
 
 #cesta #tituloCesta{
     height: 25%;
 }
 
-#cesta #productos #botonesCesta{
+#cesta #productos #cestaProductos #botonesCesta{
     height: 5%;
     margin-top: 20px;
 }
@@ -167,7 +171,10 @@
 #productos .nombre {
   width: 60%;
   float: left;
-} 
+}
+#productos .nombre #producto{
+  margin-bottom: 10px;
+}
 
 #productos .precio {
   width: 20%;
@@ -177,7 +184,7 @@
 
 #pie {
   position: fixed;
-  height: 5%;
+  height: 3%;
   right: 0;
   bottom: 0;
   left: 0;
